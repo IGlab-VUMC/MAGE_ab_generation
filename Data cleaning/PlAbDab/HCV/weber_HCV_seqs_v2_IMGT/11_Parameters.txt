@@ -1,0 +1,11 @@
+Date	Thu Mar 07 22:24:07 CET 2024
+IMGT/V-QUEST program version	3.6.3
+IMGT/V-QUEST reference directory release	202405-2
+Species	Homo sapiens (human)
+Receptor type or locus	IG
+IMGT/V-QUEST reference directory set	F+ORF+ in-frame P
+Search for insertions and deletions	yes
+Nb of nucleotides to add (or exclude) in 3' of the V-REGION for the evaluation of the alignment score	0
+Nb of nucleotides to exclude in 5' of the V-REGION for the evaluation of the nb of mutations	0
+Analysis of scFv	no
+Number of submitted sequences	617
