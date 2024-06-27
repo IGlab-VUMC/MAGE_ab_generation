@@ -16,10 +16,11 @@ Model training and generation require the following libraries:
 * PyTorch 2.1.0 with pytorch-cuda 11.8
 * Transformers 4.32.1
 
-The Progen2 repository much be pulled to interface with and download the model:
+The Progen2 repository must be pulled to interface with and download the model:
 https://github.com/enijkamp/progen2
+(This has been included in this folder for reviewers)
 
-Once downloaded, move to the 'progen2' directory here in order to import within the training/generation scripts.
+Once downloaded, move to the 'progen' directory here in order to import within the training/generation scripts.
 
 Follow-up Analyses used these additional libraries:
 * python-Levenshtein 0.25.0
@@ -33,7 +34,7 @@ _Output_analysis_: notebooks for recreating figures in manuscript
 
 _Antibody_generation_: script for generating antibody sequences against RBD. This yields a CSV file with raw sequences which can be analyzed using the notebooks in the previous directory.
 - To run, specify n number of sequences to generate, and an output csv name.
-- Example: python generate_antibodies.py --n=5 --output=MAGE-RBD_antibodies.csv
+- Example: python generate_antibodies.py --n=1 --output=MAGE_antibodies.csv
 - This was tested on an Nvidia A6000 and took ~15 seconds to generate one antibody sequence.
   
 _Fine_tuning_: script and example subset dataset (n=1000) for fine-tuning Progen2.
