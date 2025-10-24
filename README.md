@@ -16,9 +16,8 @@ Model training and generation require the following libraries:
 * PyTorch 2.1.0 with pytorch-cuda 11.8
 * Transformers 4.32.1
 
-The Progen2 repository must be pulled to interface with and download the model:
+The Progen2 repository must cloned from:
 https://github.com/enijkamp/progen2
-(This has been included in this folder for reviewers)
 
 Once downloaded, move to the 'progen' directory here in order to import within the training/generation scripts.
 
