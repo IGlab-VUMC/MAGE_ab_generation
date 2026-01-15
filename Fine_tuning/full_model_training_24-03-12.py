@@ -52,10 +52,7 @@ print('Tokenizer vocab size: ' + str(tokenizer.vocab_size))
 
 input_seqs = pd.read_csv('./final_inputs_full-model_v2_24-03-12.csv', index_col=0)
 
-
-# Using 1 and seperator and 2 as unknown AA (replacing X)
-input_seqs['SEQ'] =  input_seqs['antigen_seq'] + '[SEP]' + input_seqs['VH_abnum'] + '[LC]' + input_seqs['VL_abnum']
-# input_seqs['SEQ'] = input_seqs['SEQ'].apply(lambda x: x.replace('X', '1'))
+input_seqs['SEQ'] =  input_seqs['antigen_seq'] + '[SEP]' + input_seqs['VH_AA'] + '[LC]' + input_seqs['VL_AA']
 input_seqs = input_seqs[~input_seqs['SEQ'].isna()]
 input_seqs['SEQ'].apply(len).max()
 print(input_seqs.shape)
